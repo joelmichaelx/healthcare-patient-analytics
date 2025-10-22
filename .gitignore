@@ -1,0 +1,205 @@
+# Healthcare Patient Analytics Platform - Git Ignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Healthcare Data (PHI - Protected Health Information)
+data/raw/patient_records/
+data/raw/vital_signs/
+data/raw/lab_results/
+data/processed/patient_data/
+*.csv
+*.json
+*.parquet
+*.h5
+*.hdf5
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Snowflake
+.snowflake/
+snowflake_connector.log
+
+# Airflow
+airflow.cfg
+airflow.db
+logs/
+dags/__pycache__/
+dags/*.pyc
+
+# Kafka
+kafka-logs/
+zookeeper/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# ML Models
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pb
+models/*.onnx
+
+# Streamlit
+.streamlit/
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Kubernetes
+*.yaml
+*.yml
+!requirements.txt
+!docker-compose.yml
+
+# Secrets and Credentials
+secrets/
+credentials/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Healthcare Compliance
+audit_logs/
+compliance_reports/
+phi_access_logs/
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Test Coverage
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Documentation Build
+docs/_build/
+docs/build/
+
+# Package Files
+*.tar.gz
+*.zip
+*.rar
+
+# Healthcare Specific
+# Never commit PHI data
+patient_data/
+medical_records/
+vital_signs_data/
+lab_results_data/
+imaging_data/
+pharmacy_data/
+
+# Compliance Files
+hipaa_audit/
+compliance_reports/
+phi_logs/
+access_logs/
+
+# Generated Data
+synthetic_data/
+demo_data/
+test_data/
+
+# Model Artifacts
+mlruns/
+artifacts/
+experiments/
+
+# Monitoring
+monitoring/
+metrics/
+dashboards/
+
+# Deployment
+deployment/
+k8s/
+helm/
+
+# Local Development
+local_config/
+dev_config/

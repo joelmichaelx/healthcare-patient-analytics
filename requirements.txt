@@ -1,0 +1,118 @@
+# Healthcare Patient Analytics Platform - Dependencies
+
+# Core Data Processing
+pandas==2.1.4
+numpy==1.24.3
+scipy==1.11.4
+
+# Data Ingestion & APIs
+requests==2.31.0
+urllib3==2.1.0
+httpx==0.25.2
+aiohttp==3.9.1
+
+# Healthcare Data Standards
+fhirclient==4.0.0
+hl7apy==1.3.3
+pydicom==2.4.3
+
+# Database & Data Warehouse
+snowflake-connector-python==3.6.0
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+pymongo==4.6.0
+
+# Streaming & Real-time Processing
+kafka-python==2.0.2
+pyspark==3.5.0
+apache-airflow==2.7.3
+
+# Machine Learning
+scikit-learn==1.3.2
+tensorflow==2.15.0
+torch==2.1.2
+xgboost==2.0.3
+lightgbm==4.1.0
+
+# Data Visualization
+streamlit==1.28.2
+plotly==5.17.0
+altair==5.2.0
+matplotlib==3.8.2
+seaborn==0.13.0
+bokeh==3.3.2
+
+# Healthcare Visualization
+dash==2.14.2
+dash-bootstrap-components==1.5.0
+
+# Data Quality & Validation
+great-expectations==0.18.8
+pandera==0.17.2
+cerberus==1.3.5
+
+# Security & Compliance
+cryptography==41.0.8
+pycryptodome==3.19.0
+hashlib2==1.0.1
+
+# Configuration & Environment
+python-dotenv==1.0.0
+pyyaml==6.0.1
+configparser==6.0.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+pytest-asyncio==0.21.1
+
+# Code Quality
+black==23.11.0
+flake8==6.1.0
+isort==5.12.0
+mypy==1.7.1
+
+# Documentation
+sphinx==7.2.6
+sphinx-rtd-theme==1.3.0
+
+# Utilities
+tqdm==4.66.1
+click==8.1.7
+rich==13.7.0
+loguru==0.7.2
+
+# Healthcare Specific
+medpy==0.4.0
+scikit-survival==0.19.0
+lifelines==0.27.8
+
+# Time Series
+statsmodels==0.14.0
+prophet==1.1.4
+
+# Geospatial (for population health)
+geopandas==0.14.1
+folium==0.15.0
+
+# API Development
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+structlog==23.2.0
+
+# Development Tools
+jupyter==1.0.0
+jupyterlab==4.0.9
+ipykernel==6.27.1
+
+# Data Generation (for demo purposes)
+faker==20.1.0
+mimesis==12.1.0
+
+# Healthcare Data Generation
+synthea==1.0.0
