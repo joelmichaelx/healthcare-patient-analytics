@@ -63,6 +63,14 @@ healthcare-patient-analytics/
  requirements.txt
 ```
 
+## Live Demo
+
+**Interactive Healthcare Analytics Dashboard**
+- **[Live Dashboard](https://healthcare-patient-analytics-udsrum7n3kbduqmappf3fn3.streamlit.app/)** - Access the live healthcare analytics platform
+- Real-time patient monitoring and analytics
+- Machine learning predictions and clinical insights
+- HIPAA-compliant data visualization
+
 ## Quick Start
 
 1. **Clone the repository**
