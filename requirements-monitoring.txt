@@ -1,0 +1,54 @@
+# Healthcare System Monitoring Requirements
+# Dependencies for monitoring and alerting system
+
+# System monitoring
+psutil>=5.9.0
+
+# Database monitoring
+sqlite3  # Built-in Python module
+
+# Email notifications
+smtplib  # Built-in Python module
+email  # Built-in Python module
+
+# HTTP requests for webhooks
+requests>=2.31.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.15.0
+streamlit>=1.28.0
+
+# Logging and monitoring
+structlog>=23.2.0
+
+# Async support
+asyncio  # Built-in Python module
+threading  # Built-in Python module
+queue  # Built-in Python module
+
+# Time handling
+datetime  # Built-in Python module
+time  # Built-in Python module
+
+# JSON handling
+json  # Built-in Python module
+
+# Type hints
+typing  # Built-in Python module
+dataclasses  # Built-in Python module
+enum  # Built-in Python module
+
+# Configuration
+pyyaml>=6.0.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Development
+black>=23.0.0
+flake8>=6.0.0

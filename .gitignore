@@ -193,7 +193,7 @@ experiments/
 # Monitoring
 monitoring/
 metrics/
-dashboards/
+# dashboards/  # Commented out - we need dashboards/ for Streamlit app
 
 # Deployment
 deployment/
@@ -203,3 +203,7 @@ helm/
 # Local Development
 local_config/
 dev_config/
+
+# Documentation - Exclude all .md files except README.md
+*.md
+!README.md

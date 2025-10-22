@@ -1,0 +1,18 @@
+# Healthcare Streaming Requirements
+# ===============================
+
+# Kafka integration
+kafka-python>=2.0.2
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+plotly>=5.0.0
+streamlit>=1.28.0
+
+# Utilities
+python-dotenv
+pyyaml
+uuid

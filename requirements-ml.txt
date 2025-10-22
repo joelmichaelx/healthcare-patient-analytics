@@ -1,0 +1,21 @@
+# Healthcare ML Models Requirements
+# ================================
+
+# Core ML libraries
+scikit-learn>=1.3.0
+joblib>=1.3.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Snowflake integration
+snowflake-connector-python
+
+# Visualization
+plotly>=5.0.0
+streamlit>=1.28.0
+
+# Utilities
+python-dotenv
+pyyaml

@@ -26,41 +26,41 @@ This platform provides:
 
 ```
 healthcare-patient-analytics/
-├── data/
-│   ├── raw/
-│   │   ├── patient_records/
-│   │   ├── vital_signs/
-│   │   └── lab_results/
-│   ├── processed/
-│   └── models/
-├── src/
-│   ├── ingestion/
-│   │   ├── fhir_integration/
-│   │   ├── medical_devices/
-│   │   └── lab_systems/
-│   ├── processing/
-│   │   ├── etl_pipelines/
-│   │   ├── data_quality/
-│   │   └── compliance/
-│   ├── ml/
-│   │   ├── clinical_models/
-│   │   ├── risk_prediction/
-│   │   └── outcome_forecasting/
-│   └── visualization/
-│       ├── clinical_dashboards/
-│       └── population_health/
-├── dashboards/
-│   └── healthcare_streamlit_app.py
-├── config/
-│   ├── hipaa_compliance/
-│   └── clinical_workflows/
-├── tests/
-│   ├── clinical_tests/
-│   └── compliance_tests/
-├── docs/
-│   ├── clinical_documentation/
-│   └── compliance_guides/
-└── requirements.txt
+ data/
+    raw/
+       patient_records/
+       vital_signs/
+       lab_results/
+    processed/
+    models/
+ src/
+    ingestion/
+       fhir_integration/
+       medical_devices/
+       lab_systems/
+    processing/
+       etl_pipelines/
+       data_quality/
+       compliance/
+    ml/
+       clinical_models/
+       risk_prediction/
+       outcome_forecasting/
+    visualization/
+        clinical_dashboards/
+        population_health/
+ dashboards/
+    healthcare_streamlit_app.py
+ config/
+    hipaa_compliance/
+    clinical_workflows/
+ tests/
+    clinical_tests/
+    compliance_tests/
+ docs/
+    clinical_documentation/
+    compliance_guides/
+ requirements.txt
 ```
 
 ## Quick Start
@@ -144,12 +144,20 @@ python src/ingestion/streaming_pipeline.py
 python src/ml/train_models.py
 ```
 
-## Documentation
+## 📚 Documentation
 
-- [Clinical Documentation](docs/clinical_documentation/)
-- [Compliance Guides](docs/compliance_guides/)
-- [API Documentation](docs/api/)
-- [Deployment Guide](docs/deployment/)
+### Comprehensive Documentation
+- **[Technical Documentation](TECHNICAL_DOCUMENTATION.md)** - Complete technical specifications and architecture
+- **[API Documentation](API_DOCUMENTATION.md)** - REST API endpoints and usage
+- **[User Guide](USER_GUIDE.md)** - User manual for all dashboards and features
+- **[Deployment Guide](DEPLOYMENT_GUIDE.md)** - Production deployment instructions
+
+### Specialized Documentation
+- **[Monitoring Implementation](MONITORING_IMPLEMENTATION_SUMMARY.md)** - System monitoring and alerting
+- **[Snowflake Integration](SNOWFLAKE_INTEGRATION_SUMMARY.md)** - Data warehouse setup
+- **[ML Implementation](ML_IMPLEMENTATION_SUMMARY.md)** - Machine learning models
+- **[Streaming Implementation](STREAMING_IMPLEMENTATION_SUMMARY.md)** - Real-time data streaming
+- **[HIPAA Compliance](HIPAA_COMPLIANCE_SUMMARY.md)** - HIPAA compliance features
 
 ## Contributing
 

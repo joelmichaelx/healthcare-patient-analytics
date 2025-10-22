@@ -1,0 +1,27 @@
+# Simplified Snowflake Dependencies for Healthcare Analytics Platform
+# Compatible with Python 3.12
+
+# Core Snowflake connector (latest version)
+snowflake-connector-python
+
+# Data processing
+pandas
+numpy
+sqlalchemy
+
+# Snowflake SQLAlchemy integration
+snowflake-sqlalchemy
+
+# Configuration management
+python-dotenv
+pyyaml
+
+# Logging
+structlog
+
+# Testing
+pytest
+
+# Development tools
+black
+flake8
