@@ -1,6 +1,6 @@
 # Healthcare Patient Analytics Platform - Deployment Guide
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Overview](#overview)
 2. [Prerequisites](#prerequisites)
@@ -15,7 +15,7 @@
 11. [Backup and Recovery](#backup-and-recovery)
 12. [Troubleshooting](#troubleshooting)
 
-## 🎯 Overview
+##  Overview
 
 This deployment guide provides comprehensive instructions for deploying the Healthcare Patient Analytics Platform in various environments, from local development to production cloud deployments.
 
@@ -27,7 +27,7 @@ This deployment guide provides comprehensive instructions for deploying the Heal
 4. **Container Deployment**: Docker and Kubernetes
 5. **Serverless Deployment**: Serverless cloud functions
 
-## 🔧 Prerequisites
+##  Prerequisites
 
 ### System Requirements
 
@@ -65,7 +65,7 @@ This deployment guide provides comprehensive instructions for deploying the Heal
 - **SQLAlchemy**: Database ORM
 - **Snowflake-connector-python**: Snowflake integration
 
-## 🏠 Local Development Setup
+##  Local Development Setup
 
 ### Step 1: Clone Repository
 
@@ -154,7 +154,7 @@ curl http://localhost:8000/health
 # http://localhost:8506 - Monitoring dashboard
 ```
 
-## 🚀 Production Deployment
+##  Production Deployment
 
 ### Step 1: Server Preparation
 
@@ -367,7 +367,7 @@ sudo systemctl enable nginx
 sudo systemctl start nginx
 ```
 
-## ☁️ Cloud Deployment
+##  Cloud Deployment
 
 ### AWS Deployment
 
@@ -514,7 +514,7 @@ gcloud compute firewall-rules create allow-https \
   --source-ranges 0.0.0.0/0
 ```
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Step 1: Create Dockerfile
 
@@ -652,7 +652,7 @@ docker-compose logs -f
 docker-compose down
 ```
 
-## ☸️ Kubernetes Deployment
+##  Kubernetes Deployment
 
 ### Step 1: Create Kubernetes Manifests
 
@@ -770,7 +770,7 @@ kubectl get services -n healthcare-analytics
 kubectl get ingress -n healthcare-analytics
 ```
 
-## ⚙️ Environment Configuration
+##  Environment Configuration
 
 ### Environment Variables
 
@@ -838,7 +838,7 @@ security:
   session_secret: "your-session-secret"
 ```
 
-## 🔒 Security Configuration
+##  Security Configuration
 
 ### SSL/TLS Configuration
 
@@ -943,7 +943,7 @@ sudo chmod 600 /opt/healthcare-analytics/.env
 sudo chmod 600 /opt/healthcare-analytics/config.yaml
 ```
 
-## 📊 Monitoring Setup
+##  Monitoring Setup
 
 ### System Monitoring
 
@@ -992,10 +992,10 @@ check_service() {
     local port=$2
     
     if curl -f http://localhost:$port/health > /dev/null 2>&1; then
-        echo "✅ $service is healthy"
+        echo " $service is healthy"
         return 0
     else
-        echo "❌ $service is unhealthy"
+        echo " $service is unhealthy"
         return 1
     fi
 }
@@ -1010,9 +1010,9 @@ check_service "API" 8000
 
 # Check database
 if [ -f "/opt/healthcare-analytics/healthcare_data.db" ]; then
-    echo "✅ Database exists"
+    echo " Database exists"
 else
-    echo "❌ Database missing"
+    echo " Database missing"
 fi
 EOF
 
@@ -1055,7 +1055,7 @@ EOF
 chmod +x /opt/healthcare-analytics/monitor.sh
 ```
 
-## 💾 Backup and Recovery
+##  Backup and Recovery
 
 ### Database Backup
 
@@ -1158,7 +1158,7 @@ pip install -r requirements.txt
 sudo supervisorctl start all
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 

@@ -1,6 +1,6 @@
 # Healthcare Patient Analytics Platform - Technical Documentation
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [System Overview](#system-overview)
 2. [Architecture](#architecture)
@@ -17,7 +17,7 @@
 13. [Troubleshooting](#troubleshooting)
 14. [Contributing](#contributing)
 
-## 🏥 System Overview
+##  System Overview
 
 ### Purpose
 The Healthcare Patient Analytics Platform is a comprehensive, enterprise-grade system designed for real-time patient monitoring, predictive health analytics, and clinical decision support. The platform provides healthcare professionals with advanced analytics, machine learning predictions, and HIPAA-compliant data management.
@@ -38,42 +38,42 @@ The Healthcare Patient Analytics Platform is a comprehensive, enterprise-grade s
 - **IT Administrators**: System administrators and DevOps teams
 - **Compliance Officers**: HIPAA compliance and security teams
 
-## 🏗️ Architecture
+##  Architecture
 
 ### High-Level Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                    Healthcare Analytics Platform                │
-├─────────────────────────────────────────────────────────────────┤
-│  Presentation Layer (Streamlit Dashboards)                     │
-│  ├── Healthcare Analytics Dashboard (Port 8501)                │
-│  ├── ML Analytics Dashboard (Port 8503)                       │
-│  ├── Streaming Dashboard (Port 8504)                          │
-│  ├── HIPAA Compliance Dashboard (Port 8505)                    │
-│  └── System Monitoring Dashboard (Port 8506)                  │
-├─────────────────────────────────────────────────────────────────┤
-│  API Layer (FastAPI)                                           │
-│  ├── REST API Endpoints (Port 8000)                           │
-│  ├── Authentication & Authorization                           │
-│  └── CORS & Security Middleware                               │
-├─────────────────────────────────────────────────────────────────┤
-│  Business Logic Layer                                          │
-│  ├── Machine Learning Models                                  │
-│  ├── Analytics Engine                                         │
-│  ├── HIPAA Compliance Manager                                 │
-│  └── Monitoring System                                        │
-├─────────────────────────────────────────────────────────────────┤
-│  Data Processing Layer                                         │
-│  ├── Apache Kafka (Streaming)                                 │
-│  ├── Apache Spark (Processing)                                │
-│  └── ETL Pipelines (Apache Airflow)                           │
-├─────────────────────────────────────────────────────────────────┤
-│  Data Storage Layer                                            │
-│  ├── SQLite (Local Development)                               │
-│  ├── Snowflake (Production Data Warehouse)                    │
-│  └── Apache Iceberg (Data Lakehouse)                          │
-└─────────────────────────────────────────────────────────────────┘
+
+                    Healthcare Analytics Platform                
+
+  Presentation Layer (Streamlit Dashboards)                     
+   Healthcare Analytics Dashboard (Port 8501)                
+   ML Analytics Dashboard (Port 8503)                       
+   Streaming Dashboard (Port 8504)                          
+   HIPAA Compliance Dashboard (Port 8505)                    
+   System Monitoring Dashboard (Port 8506)                  
+
+  API Layer (FastAPI)                                           
+   REST API Endpoints (Port 8000)                           
+   Authentication & Authorization                           
+   CORS & Security Middleware                               
+
+  Business Logic Layer                                          
+   Machine Learning Models                                  
+   Analytics Engine                                         
+   HIPAA Compliance Manager                                 
+   Monitoring System                                        
+
+  Data Processing Layer                                         
+   Apache Kafka (Streaming)                                 
+   Apache Spark (Processing)                                
+   ETL Pipelines (Apache Airflow)                           
+
+  Data Storage Layer                                            
+   SQLite (Local Development)                               
+   Snowflake (Production Data Warehouse)                    
+   Apache Iceberg (Data Lakehouse)                          
+
 ```
 
 ### Component Architecture
@@ -108,7 +108,7 @@ The Healthcare Patient Analytics Platform is a comprehensive, enterprise-grade s
 - **Mobile Responsive**: Responsive design for mobile devices
 - **Accessibility**: WCAG compliance for accessibility
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Core Technologies
 
@@ -170,7 +170,7 @@ The Healthcare Patient Analytics Platform is a comprehensive, enterprise-grade s
 - **Docker**: Containerization platform
 - **Docker Compose**: Multi-container Docker applications
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Core Tables
 
@@ -316,7 +316,7 @@ WHERE p.RISK_LEVEL = 'Critical'
 GROUP BY p.PATIENT_ID, p.NAME, p.CONDITION, p.RISK_LEVEL;
 ```
 
-## 🔌 API Documentation
+##  API Documentation
 
 ### Base URL
 ```
@@ -631,7 +631,7 @@ def train_model(X, y, model_type='readmission'):
 - **Model Drift Detection**: Detection of model performance degradation
 - **Alerting**: Automated alerts for model issues
 
-## 🌊 Streaming Architecture
+##  Streaming Architecture
 
 ### Apache Kafka Setup
 
@@ -697,7 +697,7 @@ Healthcare Devices → Kafka Producers → Kafka Topics → Kafka Consumers → 
 Raw Data → Validation → Transformation → Enrichment → Analytics → Storage → Dashboards
 ```
 
-## 🔒 HIPAA Compliance
+##  HIPAA Compliance
 
 ### Data Protection
 
@@ -759,7 +759,7 @@ Raw Data → Validation → Transformation → Enrichment → Analytics → Stor
 - **System Events**: System event logs
 - **Compliance Reports**: Compliance reporting
 
-## 📊 Monitoring & Alerting
+##  Monitoring & Alerting
 
 ### System Monitoring
 
@@ -803,7 +803,7 @@ Raw Data → Validation → Transformation → Enrichment → Analytics → Stor
 - **Quality Metrics**: Healthcare quality indicators
 - **Safety Metrics**: Patient safety indicators
 
-## 🚀 Deployment Guide
+##  Deployment Guide
 
 ### Local Development
 
@@ -911,7 +911,7 @@ SLACK_WEBHOOK_URL=your-slack-webhook
 - `docker-compose.yml`: Docker Compose configuration
 - `requirements.txt`: Python dependencies
 
-## 🔐 Security
+##  Security
 
 ### Authentication & Authorization
 
@@ -955,7 +955,7 @@ SLACK_WEBHOOK_URL=your-slack-webhook
 - **Incident Response**: Security incident response
 - **Vulnerability Management**: Vulnerability scanning
 
-## ⚡ Performance
+##  Performance
 
 ### Performance Optimization
 
@@ -999,7 +999,7 @@ SLACK_WEBHOOK_URL=your-slack-webhook
 - **Infrastructure Monitoring**: Infrastructure monitoring
 - **Business Metrics**: Business performance metrics
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -1114,7 +1114,7 @@ pytest
 - **Postman Collection**: API testing collection
 - **Examples**: Code examples
 
-## 📞 Support
+##  Support
 
 ### Contact Information
 - **GitHub**: https://github.com/joelmichaelx/healthcare-patient-analytics

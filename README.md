@@ -144,7 +144,7 @@ python src/ingestion/streaming_pipeline.py
 python src/ml/train_models.py
 ```
 
-## 📚 Documentation
+##  Documentation
 
 ### Comprehensive Documentation
 - **[Technical Documentation](TECHNICAL_DOCUMENTATION.md)** - Complete technical specifications and architecture

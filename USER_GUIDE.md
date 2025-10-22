@@ -1,6 +1,6 @@
 # Healthcare Patient Analytics Platform - User Guide
 
-## 📋 Table of Contents
+##  Table of Contents
 
 1. [Getting Started](#getting-started)
 2. [Dashboard Overview](#dashboard-overview)
@@ -13,7 +13,7 @@
 9. [Troubleshooting](#troubleshooting)
 10. [Best Practices](#best-practices)
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
@@ -54,7 +54,7 @@ streamlit run dashboards/healthcare_monitoring_dashboard.py --server.port 8506
 3. **Explore Dashboards**: Familiarize yourself with different dashboard sections
 4. **Configure Settings**: Set up your preferences and notifications
 
-## 📊 Dashboard Overview
+##  Dashboard Overview
 
 The Healthcare Patient Analytics Platform consists of five specialized dashboards:
 
@@ -83,7 +83,7 @@ The Healthcare Patient Analytics Platform consists of five specialized dashboard
 - **Features**: System metrics, alerts, performance monitoring
 - **Users**: IT administrators, DevOps teams
 
-## 🏥 Healthcare Analytics Dashboard
+##  Healthcare Analytics Dashboard
 
 ### Overview
 The main dashboard provides comprehensive patient monitoring and analytics capabilities.
@@ -184,7 +184,7 @@ The ML Analytics Dashboard provides machine learning predictions and model manag
 3. **Take Action**: Follow up on critical alerts
 4. **Track Progress**: Monitor alert resolution
 
-## 🌊 Streaming Dashboard
+##  Streaming Dashboard
 
 ### Overview
 The Streaming Dashboard provides real-time data streaming and monitoring capabilities.
@@ -223,7 +223,7 @@ The Streaming Dashboard provides real-time data streaming and monitoring capabil
 3. **Configure Settings**: Adjust streaming parameters
 4. **Monitor Performance**: Track streaming performance
 
-## 🔒 HIPAA Compliance Dashboard
+##  HIPAA Compliance Dashboard
 
 ### Overview
 The HIPAA Compliance Dashboard provides comprehensive HIPAA compliance monitoring and management.
@@ -268,7 +268,7 @@ The HIPAA Compliance Dashboard provides comprehensive HIPAA compliance monitorin
 3. **Generate Reports**: Create compliance reports
 4. **Respond to Incidents**: Handle security incidents
 
-## 📊 System Monitoring Dashboard
+##  System Monitoring Dashboard
 
 ### Overview
 The System Monitoring Dashboard provides comprehensive system health and performance monitoring.
@@ -307,7 +307,7 @@ The System Monitoring Dashboard provides comprehensive system health and perform
 3. **Resolve Issues**: Address system issues
 4. **Track Progress**: Monitor resolution progress
 
-## 🔌 API Usage
+##  API Usage
 
 ### Getting Started with the API
 
@@ -380,7 +380,7 @@ response = requests.post(f"{API_BASE}/api/v1/patients", json=patient_data, heade
 new_patient = response.json()
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -421,7 +421,7 @@ new_patient = response.json()
 - **Email**: support@healthcare-analytics.com
 - **Documentation**: https://docs.healthcare-analytics.com
 
-## 💡 Best Practices
+##  Best Practices
 
 ### Dashboard Usage
 

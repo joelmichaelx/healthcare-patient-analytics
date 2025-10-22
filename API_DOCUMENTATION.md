@@ -1,10 +1,10 @@
 # Healthcare Patient Analytics API Documentation
 
-## 📋 Overview
+##  Overview
 
 The Healthcare Patient Analytics API provides comprehensive REST endpoints for managing patient data, vital signs, lab results, medications, machine learning predictions, and system analytics. The API is built with FastAPI and provides real-time access to healthcare data with HIPAA compliance.
 
-## 🔗 Base Information
+##  Base Information
 
 - **Base URL**: `http://localhost:8000`
 - **API Version**: `v1`
@@ -13,7 +13,7 @@ The Healthcare Patient Analytics API provides comprehensive REST endpoints for m
 - **Documentation**: `http://localhost:8000/docs` (Swagger UI)
 - **Alternative Docs**: `http://localhost:8000/redoc` (ReDoc)
 
-## 🔐 Authentication
+##  Authentication
 
 All API endpoints require Bearer token authentication:
 
@@ -28,7 +28,7 @@ Set the `HEALTHCARE_API_TOKEN` environment variable:
 export HEALTHCARE_API_TOKEN="your-secure-api-token"
 ```
 
-## 📊 API Endpoints
+##  API Endpoints
 
 ### Health Check
 
@@ -440,7 +440,7 @@ Retrieve a sample of live streaming data.
 
 ---
 
-## 📝 Data Models
+##  Data Models
 
 ### Patient Model
 ```json
@@ -519,7 +519,7 @@ Retrieve a sample of live streaming data.
 
 ---
 
-## 🚨 Error Responses
+##  Error Responses
 
 ### HTTP Status Codes
 
@@ -587,7 +587,7 @@ Retrieve a sample of live streaming data.
 
 ---
 
-## 🔧 Rate Limiting
+##  Rate Limiting
 
 ### Rate Limits
 - **Default**: 100 requests per minute per IP
@@ -610,7 +610,7 @@ X-RateLimit-Reset: 1640995200
 
 ---
 
-## 📊 Pagination
+##  Pagination
 
 ### Pagination Parameters
 - `skip`: Number of records to skip (default: 0)
@@ -632,7 +632,7 @@ X-RateLimit-Reset: 1640995200
 
 ---
 
-## 🔍 Filtering and Sorting
+##  Filtering and Sorting
 
 ### Filtering
 Most endpoints support filtering by common fields:
@@ -652,7 +652,7 @@ GET /api/v1/patients?sort=-admission_date  # Descending order
 
 ---
 
-## 📱 SDK Examples
+##  SDK Examples
 
 ### Python SDK Example
 ```python
@@ -754,7 +754,7 @@ curl -X GET "http://localhost:8000/api/v1/patients/P001/predictions" \
 
 ---
 
-## 🔒 Security
+##  Security
 
 ### Authentication
 - **Bearer Token**: JWT-based authentication
@@ -776,7 +776,7 @@ curl -X GET "http://localhost:8000/api/v1/patients/P001/predictions" \
 
 ---
 
-## 📈 Performance
+##  Performance
 
 ### Response Times
 - **Average Response Time**: < 200ms
@@ -811,7 +811,7 @@ curl -X GET "http://localhost:8000/api/v1/patients/P001/predictions" \
 
 ---
 
-## 📞 Support
+##  Support
 
 ### Documentation
 - **API Documentation**: https://api.healthcare-analytics.com/docs
